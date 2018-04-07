@@ -156,11 +156,7 @@ print("	};")
 
 print("""
 	%s() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS) {}
-	void step() override;
 };
-
-void %s::step() {
-}
 
 struct %sWidget : ModuleWidget {
 	%sWidget(%s *m) : ModuleWidget(m) {
@@ -170,7 +166,7 @@ struct %sWidget : ModuleWidget {
 		addChild(Widget::create<ScrewSilver>(Vec(box.size.x - 30, 0)));
 		addChild(Widget::create<ScrewSilver>(Vec(15, 365)));
 		addChild(Widget::create<ScrewSilver>(Vec(box.size.x - 30, 365)));\
-""" % (slug, slug, slug, slug, slug, basename))
+""" % (slug, slug, slug, slug, basename))
 
 
 # Params

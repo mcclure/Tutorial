@@ -21,11 +21,7 @@ struct DelayBase : Module {
 	};
 
 	DelayBase() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS) {}
-	void step() override;
 };
-
-void DelayBase::step() {
-}
 
 struct DelayBaseWidget : ModuleWidget {
 	DelayBaseWidget(DelayBase *m) : ModuleWidget(m) {
