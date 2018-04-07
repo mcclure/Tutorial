@@ -177,19 +177,19 @@ struct %sWidget : ModuleWidget {
 if len(params) > 0:
 	print("")
 for w in params:
-	print("		addParam(createParam<Davies1900hBlackKnob>(mm2px(Vec(%g, %g)), module, %s::%s_PARAM, 0.0, 1.0, 0.0));" % (w['x'], w['y'], slug, w['id']))
+	print("		addParam(ParamWidget::create<Davies1900hBlackKnob>(mm2px(Vec(%g, %g)), module, %s::%s_PARAM, 0.0, 1.0, 0.0));" % (w['x'], w['y'], slug, w['id']))
 
 # Inputs
 if len(inputs) > 0:
 	print("")
 for w in inputs:
-	print("		addInput(createInput<PJ301MPort>(mm2px(Vec(%g, %g)), module, %s::%s_INPUT));" % (w['x'], w['y'], slug, w['id']))
+	print("		addInput(Port::create<PJ301MPort>(mm2px(Vec(%g, %g)), Port::INPUT, module, %s::%s_INPUT));" % (w['x'], w['y'], slug, w['id']))
 
 # Outputs
 if len(outputs) > 0:
 	print("")
 for w in outputs:
-	print("		addOutput(createOutput<PJ301MPort>(mm2px(Vec(%g, %g)), module, %s::%s_OUTPUT));" % (w['x'], w['y'], slug, w['id']))
+	print("		addOutput(Port::create<PJ301MPort>(mm2px(Vec(%g, %g)), Port::OUTPUT, module, %s::%s_OUTPUT));" % (w['x'], w['y'], slug, w['id']))
 
 # Lights
 if len(lights) > 0:
