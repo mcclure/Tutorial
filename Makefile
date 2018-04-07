@@ -30,3 +30,4 @@ include $(RACK_DIR)/plugin.mk
 
 svg:
 	python3 panel2source.py res/DelayBase.svg > src/DelayBase.hpp
+	python3 panel2source.py res/HoldBase.svg > src/HoldBase.hpp
