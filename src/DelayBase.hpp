@@ -20,6 +20,11 @@ struct DelayBase : Module {
 	enum LightIds {
 		NUM_LIGHTS
 	};
+	enum CustomIds {
+		NUM_CUSTOMS
+	};
+	Vec custom[NUM_CUSTOMS] = {
+	};
 
 	DelayBase() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS) {}
 };

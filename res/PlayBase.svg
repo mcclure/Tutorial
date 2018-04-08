@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="90"
+   height="380"
+   viewBox="0 0 23.812501 100.54167"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="PlayBase.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata30">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs28" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="733"
+     id="namedview26"
+     showgrid="false"
+     inkscape:zoom="1.7566022"
+     inkscape:cx="-101.32656"
+     inkscape:cy="212.56973"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8"
+     inkscape:snap-text-baseline="false" />
+  <g
+     id="ok"
+     transform="translate(-0.10314268,-196.50022)">
+    <g
+       id="layer1">
+      <title
+         id="title2">layer3</title>
+      <path
+         style="opacity:1;vector-effect:none;fill:#f0f0f0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.48607069;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="M 0,196.45831 H 23.8125 V 296.99999 H 0 Z"
+         id="rect817"
+         inkscape:connector-curvature="0" />
+      <line
+         style="stroke:#000000"
+         x1="11.99279"
+         y1="212.3838"
+         x2="11.99279"
+         y2="212.3838"
+         id="line5" />
+    </g>
+  </g>
+  <line
+     style="stroke: rgb(0, 0, 0);"
+     x1="10.169291496276855"
+     y1="22.065444946289062"
+     x2="10.169291496276855"
+     y2="22.065444946289062"
+     id="line16">
+    <title
+       id="title13">test4</title>
+  </line>
+  <line
+     style="stroke: rgb(0, 0, 0);"
+     x1="4.413088798522949"
+     y1="26.094785690307617"
+     x2="4.413088798522949"
+     y2="26.094785690307617"
+     id="line18" />
+  <g
+     id="widgets" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10.58333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+     x="6.4436135"
+     y="8.6269894"
+     id="text835"><tspan
+       sodipodi:role="line"
+       id="tspan833"
+       x="6.4436135"
+       y="8.6269894"
+       style="font-size:4.58611107px;stroke-width:0.26458335">Play</tspan></text>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="widgets"
+     style="display:inline">
+    <rect
+       x="3.2170668"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="14.35609"
+       height="4"
+       width="4"
+       id="C" />
+    <rect
+       id="D"
+       width="4"
+       height="4"
+       y="23.242802"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       x="3.0664446" />
+    <rect
+       x="14.664357"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="18.347578"
+       height="4"
+       width="4"
+       id="CS" />
+    <rect
+       x="3.0664446"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="31.602335"
+       height="4"
+       width="4"
+       id="E" />
+    <rect
+       id="DS"
+       width="4"
+       height="4"
+       y="27.836779"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       x="14.589046" />
+    <rect
+       x="3.0664444"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="39.886559"
+       height="4"
+       width="4"
+       id="F" />
+    <rect
+       id="FS"
+       width="4"
+       height="4"
+       y="44.028671"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       x="13.53469" />
+    <rect
+       x="3.2170668"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="51.409161"
+       height="4"
+       width="4"
+       id="G" />
+    <rect
+       id="GS"
+       width="4"
+       height="4"
+       y="56.153763"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       x="13.233445" />
+    <rect
+       x="3.4429998"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="63.835495"
+       height="4"
+       width="4"
+       id="A" />
+    <rect
+       id="AS"
+       width="4"
+       height="4"
+       y="67.073875"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       x="13.685312" />
+    <rect
+       x="3.2170668"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="74.604988"
+       height="4"
+       width="4"
+       id="rect874" />
+    <rect
+       id="B"
+       width="4"
+       height="4"
+       y="74.604988"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       x="3.2170668" />
+    <rect
+       x="3.0664446"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="83.792946"
+       height="4"
+       width="4"
+       id="C2" />
+    <rect
+       id="OCTDOWN"
+       width="4"
+       height="4"
+       y="94.487129"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       x="1.4095999" />
+    <rect
+       x="7.2838678"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="94.637741"
+       height="4"
+       width="4"
+       id="OCTUP" />
+    <rect
+       id="TRANSDOWN"
+       width="4"
+       height="4"
+       y="94.637741"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       x="12.940712" />
+    <rect
+       x="18.748178"
+       style="fill:#00ffff;stroke-width:0.26458299"
+       y="94.487114"
+       height="4"
+       width="4"
+       id="TRANSUP" />
+  </g>
+</svg>

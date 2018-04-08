@@ -72,6 +72,7 @@ params = []
 inputs = []
 outputs = []
 lights = []
+customs = []
 
 groups = root.findall(".//{http://www.w3.org/2000/svg}g")
 eprint("Found %d groups" % len(groups))
@@ -114,12 +115,14 @@ for group in groups:
 					outputs.append(widget)
 				if color_triplet == (255, 0, 255): # Magenta
 					lights.append(widget)
+				if color_triplet == (0, 255, 255): # Cyan
+					customs.append(widget)
 
 params = sorted(params, key=lambda widget: widget['y'])
 inputs = sorted(inputs, key=lambda widget: widget['y'])
 outputs = sorted(outputs, key=lambda widget: widget['y'])
 lights = sorted(lights, key=lambda widget: widget['y'])
-
+customs = sorted(customs, key=lambda widget: widget['y'])
 
 # Print output
 
@@ -155,6 +158,18 @@ print("	enum LightIds {")
 for w in lights:
 	print("		%s_LIGHT," % w['id'])
 print("		NUM_LIGHTS")
+print("	};")
+
+# Customs
+print("	enum CustomIds {")
+for w in customs:
+	print("		%s_CUSTOM," % w['id'])
+print("		NUM_CUSTOMS")
+print("	};")
+
+print("	Vec custom[NUM_CUSTOMS] = {")
+for w in customs:
+	print("		mm2px(Vec(%g, %g))," % (w['x'], w['y']))
 print("	};")
 
 
