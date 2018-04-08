@@ -41,8 +41,8 @@
      id="namedview26"
      showgrid="false"
      inkscape:zoom="4.9684212"
-     inkscape:cx="37.715816"
-     inkscape:cy="305.75669"
+     inkscape:cx="41.539968"
+     inkscape:cy="171.73056"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -166,5 +166,12 @@
        y="19.176001"
        style="fill:#00ff00;stroke-width:0.26458299"
        x="3.4430001" />
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-width:0.26458335"
+       id="mute"
+       width="2.0236142"
+       height="2.982168"
+       x="4.5265045"
+       y="55.968906" />
   </g>
 </svg>

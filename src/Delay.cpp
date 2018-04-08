@@ -28,6 +28,7 @@ struct DelayModule : DelayBase {
 
 	void step() override {
 		int backLook = delaySamples();
+		bool mute = params[MUTE_PARAM].value > 0.5;
 
 		int inPhase = delayPhase;
 		int outPhase = (delayPhase - backLook + MAX_HISTORY) % MAX_HISTORY;
@@ -37,10 +38,13 @@ struct DelayModule : DelayBase {
 		float outValue = history[outPhase];
 
 		history[inPhase] = 0;
-		history[inPhase] += inputs[I_INPUT].value;
+		if (!mute)
+			history[inPhase] += inputs[I_INPUT].value;
 		history[inPhase] += inputs[SENDIN_INPUT].value;
 
 		outputs[O_OUTPUT].value = history[inPhase];
+		if (mute)
+			outputs[O_OUTPUT].value += inputs[I_INPUT].value;
 
 		outputs[SENDOUT_OUTPUT].value = outValue;
 	}
@@ -49,6 +53,7 @@ struct DelayModule : DelayBase {
 struct DelayWidget : DelayBaseWidget {
 	Label *labelWidget;
 	DelayModule *myModule;
+	ToggleSwitch *muteSwitch;
 
 	DelayWidget(DelayModule *m) : DelayBaseWidget(m) {
 		labelWidget = new Label();

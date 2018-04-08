@@ -4,6 +4,7 @@ struct DelayBase : Module {
 	enum ParamIds {
 		COARSE_PARAM,
 		FINE_PARAM,
+		MUTE_PARAM,
 		NUM_PARAMS
 	};
 	enum InputIds {
@@ -34,6 +35,7 @@ struct DelayBaseWidget : ModuleWidget {
 
 		addParam(ParamWidget::create<Davies1900hBlackKnob>(mm2px(Vec(3.443, 43.606)), module, DelayBase::COARSE_PARAM, 0.0, 1.0, 0.0));
 		addParam(ParamWidget::create<Davies1900hBlackKnob>(mm2px(Vec(15.423, 43.606)), module, DelayBase::FINE_PARAM, 0.0, 1.0, 0.0));
+		addParam(ParamWidget::create<CKSS>(mm2px(Vec(4.527, 55.969)), module, DelayBase::MUTE_PARAM, 0.0, 1.0, 0.0));
 
 		addInput(Port::create<PJ301MPort>(mm2px(Vec(3.443, 19.176)), Port::INPUT, module, DelayBase::I_INPUT));
 		addInput(Port::create<PJ301MPort>(mm2px(Vec(3.521, 27.476)), Port::INPUT, module, DelayBase::SENDIN_INPUT));

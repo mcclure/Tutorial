@@ -22,6 +22,8 @@ The panel must be set up in a very specific way using Inkscape.
 	- inputs: green #00ff00
 	- outputs: blue #0000ff
 	- lights: magenta #ff00ff
+	- switches: yellow #ffff00
+	- custom: cyan #00ffff
 3. The top-left position of the rectangle is what matters. Size doesn't, however you may want to match it to the size of the widget for alignment purposes.
 4. Set the ID of the element with the enum the widget will refer to, excluding _PARAM, etc.
 5. Run the script, and an entire C++ file will be generated on stdout which is a better starting point than nothing at all.
@@ -101,8 +103,10 @@ for group in groups:
 				x = round(x, 3)
 				y = round(y, 3)
 				widget = {'id': id, 'x': x, 'y': y, 'color': color_triplet}
+				if color_triplet == (255, 255, 0):
+					widget['switch'] = True
 				eprint(widget)
-				if color_triplet == (255, 0, 0): # Red
+				if 'switch' in widget or color_triplet == (255, 0, 0): # Red
 					params.append(widget)
 				if color_triplet == (0, 255, 0): # Green
 					inputs.append(widget)
@@ -173,7 +177,8 @@ struct %sWidget : ModuleWidget {
 if len(params) > 0:
 	print("")
 for w in params:
-	print("		addParam(ParamWidget::create<Davies1900hBlackKnob>(mm2px(Vec(%g, %g)), module, %s::%s_PARAM, 0.0, 1.0, 0.0));" % (w['x'], w['y'], slug, w['id']))
+	print("		addParam(ParamWidget::create<%s>(mm2px(Vec(%g, %g)), module, %s::%s_PARAM, 0.0, 1.0, 0.0));" \
+		% ('CKSS' if 'switch' in w else 'Davies1900hBlackKnob', w['x'], w['y'], slug, w['id']))
 
 # Inputs
 if len(inputs) > 0:
