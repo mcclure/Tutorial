@@ -23,8 +23,6 @@ struct DelayBase : Module {
 	enum CustomIds {
 		NUM_CUSTOMS
 	};
-	Vec custom[NUM_CUSTOMS] = {
-	};
 
 	DelayBase() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS) {}
 };

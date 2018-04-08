@@ -25,8 +25,6 @@ struct HoldBase : Module {
 	enum CustomIds {
 		NUM_CUSTOMS
 	};
-	Vec custom[NUM_CUSTOMS] = {
-	};
 
 	HoldBase() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS) {}
 };

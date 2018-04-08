@@ -167,10 +167,8 @@ for w in customs:
 print("		NUM_CUSTOMS")
 print("	};")
 
-print("	Vec custom[NUM_CUSTOMS] = {")
-for w in customs:
-	print("		mm2px(Vec(%g, %g))," % (w['x'], w['y']))
-print("	};")
+if customs:
+	print("	static Vec customs[NUM_CUSTOMS];")
 
 
 print("""
@@ -215,3 +213,10 @@ for w in lights:
 
 
 print("}};")
+
+if customs:
+	print("")
+	print("Vec %s::customs[] = {" % slug)
+	for w in customs:
+		print("	mm2px(Vec(%g, %g))," % (w['x'], w['y']))
+	print("};")

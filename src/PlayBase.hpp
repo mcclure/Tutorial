@@ -5,6 +5,8 @@ struct PlayBase : Module {
 		NUM_PARAMS
 	};
 	enum InputIds {
+		TRIG_INPUT,
+		CV_INPUT,
 		NUM_INPUTS
 	};
 	enum OutputIds {
@@ -34,26 +36,7 @@ struct PlayBase : Module {
 		TRANSDOWN_CUSTOM,
 		NUM_CUSTOMS
 	};
-	Vec custom[NUM_CUSTOMS] = {
-		mm2px(Vec(3.217, 14.356)),
-		mm2px(Vec(14.664, 18.348)),
-		mm2px(Vec(3.066, 23.243)),
-		mm2px(Vec(14.589, 27.837)),
-		mm2px(Vec(3.066, 31.602)),
-		mm2px(Vec(3.066, 39.887)),
-		mm2px(Vec(13.535, 44.029)),
-		mm2px(Vec(3.217, 51.409)),
-		mm2px(Vec(13.233, 56.154)),
-		mm2px(Vec(3.443, 63.835)),
-		mm2px(Vec(13.685, 67.074)),
-		mm2px(Vec(3.217, 74.605)),
-		mm2px(Vec(3.217, 74.605)),
-		mm2px(Vec(3.066, 83.793)),
-		mm2px(Vec(1.41, 94.487)),
-		mm2px(Vec(18.748, 94.487)),
-		mm2px(Vec(7.284, 94.638)),
-		mm2px(Vec(12.941, 94.638)),
-	};
+	static Vec customs[NUM_CUSTOMS];
 
 	PlayBase() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS) {}
 };
@@ -66,4 +49,28 @@ struct PlayBaseWidget : ModuleWidget {
 		addChild(Widget::create<ScrewSilver>(Vec(box.size.x - 30, 0)));
 		addChild(Widget::create<ScrewSilver>(Vec(15, 365)));
 		addChild(Widget::create<ScrewSilver>(Vec(box.size.x - 30, 365)));
+
+		addInput(Port::create<PJ301MPort>(mm2px(Vec(6.531, 88.01)), Port::INPUT, module, PlayBase::TRIG_INPUT));
+		addInput(Port::create<PJ301MPort>(mm2px(Vec(14.815, 88.01)), Port::INPUT, module, PlayBase::CV_INPUT));
 }};
+
+Vec PlayBase::customs[] = {
+	mm2px(Vec(3.368, 12.097)),
+	mm2px(Vec(14.815, 16.088)),
+	mm2px(Vec(3.217, 20.983)),
+	mm2px(Vec(14.74, 25.577)),
+	mm2px(Vec(3.217, 29.343)),
+	mm2px(Vec(3.217, 37.627)),
+	mm2px(Vec(13.685, 41.769)),
+	mm2px(Vec(3.368, 49.15)),
+	mm2px(Vec(13.384, 53.894)),
+	mm2px(Vec(3.594, 61.576)),
+	mm2px(Vec(13.836, 64.815)),
+	mm2px(Vec(3.368, 72.346)),
+	mm2px(Vec(3.368, 72.346)),
+	mm2px(Vec(3.217, 81.534)),
+	mm2px(Vec(1.41, 94.487)),
+	mm2px(Vec(18.748, 94.487)),
+	mm2px(Vec(7.284, 94.638)),
+	mm2px(Vec(12.941, 94.638)),
+};

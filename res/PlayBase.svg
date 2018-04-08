@@ -42,12 +42,12 @@
      id="namedview26"
      showgrid="false"
      inkscape:zoom="1.7566022"
-     inkscape:cx="-101.32656"
-     inkscape:cy="212.56973"
+     inkscape:cx="-124.0978"
+     inkscape:cy="12.473178"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg8"
+     inkscape:current-layer="layer2"
      inkscape:snap-text-baseline="false" />
   <g
      id="ok"
@@ -71,21 +71,21 @@
     </g>
   </g>
   <line
-     style="stroke: rgb(0, 0, 0);"
-     x1="10.169291496276855"
-     y1="22.065444946289062"
-     x2="10.169291496276855"
-     y2="22.065444946289062"
+     style="stroke:#000000"
+     x1="10.319914"
+     y1="19.806112"
+     x2="10.319914"
+     y2="19.806112"
      id="line16">
     <title
        id="title13">test4</title>
   </line>
   <line
-     style="stroke: rgb(0, 0, 0);"
-     x1="4.413088798522949"
-     y1="26.094785690307617"
-     x2="4.413088798522949"
-     y2="26.094785690307617"
+     style="stroke:#000000"
+     x1="4.5637112"
+     y1="23.835453"
+     x2="4.5637112"
+     y2="23.835453"
      id="line18" />
   <g
      id="widgets" />
@@ -106,9 +106,9 @@
      inkscape:label="widgets"
      style="display:inline">
     <rect
-       x="3.2170668"
+       x="3.3676889"
        style="fill:#00ffff;stroke-width:0.26458299"
-       y="14.35609"
+       y="12.096756"
        height="4"
        width="4"
        id="C" />
@@ -116,20 +116,20 @@
        id="D"
        width="4"
        height="4"
-       y="23.242802"
+       y="20.983469"
        style="fill:#00ffff;stroke-width:0.26458299"
-       x="3.0664446" />
+       x="3.2170668" />
     <rect
-       x="14.664357"
+       x="14.81498"
        style="fill:#00ffff;stroke-width:0.26458299"
-       y="18.347578"
+       y="16.088245"
        height="4"
        width="4"
        id="CS" />
     <rect
-       x="3.0664446"
+       x="3.2170668"
        style="fill:#00ffff;stroke-width:0.26458299"
-       y="31.602335"
+       y="29.343002"
        height="4"
        width="4"
        id="E" />
@@ -137,13 +137,13 @@
        id="DS"
        width="4"
        height="4"
-       y="27.836779"
+       y="25.577446"
        style="fill:#00ffff;stroke-width:0.26458299"
-       x="14.589046" />
+       x="14.739668" />
     <rect
-       x="3.0664444"
+       x="3.2170665"
        style="fill:#00ffff;stroke-width:0.26458299"
-       y="39.886559"
+       y="37.627224"
        height="4"
        width="4"
        id="F" />
@@ -151,13 +151,13 @@
        id="FS"
        width="4"
        height="4"
-       y="44.028671"
+       y="41.769337"
        style="fill:#00ffff;stroke-width:0.26458299"
-       x="13.53469" />
+       x="13.685312" />
     <rect
-       x="3.2170668"
+       x="3.3676889"
        style="fill:#00ffff;stroke-width:0.26458299"
-       y="51.409161"
+       y="49.149826"
        height="4"
        width="4"
        id="G" />
@@ -165,13 +165,13 @@
        id="GS"
        width="4"
        height="4"
-       y="56.153763"
+       y="53.894428"
        style="fill:#00ffff;stroke-width:0.26458299"
-       x="13.233445" />
+       x="13.384068" />
     <rect
-       x="3.4429998"
+       x="3.593622"
        style="fill:#00ffff;stroke-width:0.26458299"
-       y="63.835495"
+       y="61.57616"
        height="4"
        width="4"
        id="A" />
@@ -179,13 +179,13 @@
        id="AS"
        width="4"
        height="4"
-       y="67.073875"
+       y="64.814545"
        style="fill:#00ffff;stroke-width:0.26458299"
-       x="13.685312" />
+       x="13.835935" />
     <rect
-       x="3.2170668"
+       x="3.3676889"
        style="fill:#00ffff;stroke-width:0.26458299"
-       y="74.604988"
+       y="72.345657"
        height="4"
        width="4"
        id="rect874" />
@@ -193,13 +193,13 @@
        id="B"
        width="4"
        height="4"
-       y="74.604988"
+       y="72.345657"
        style="fill:#00ffff;stroke-width:0.26458299"
-       x="3.2170668" />
+       x="3.3676889" />
     <rect
-       x="3.0664446"
+       x="3.2170668"
        style="fill:#00ffff;stroke-width:0.26458299"
-       y="83.792946"
+       y="81.533615"
        height="4"
        width="4"
        id="C2" />
@@ -231,5 +231,19 @@
        height="4"
        width="4"
        id="TRANSUP" />
+    <rect
+       id="trig"
+       width="4"
+       height="4"
+       y="88.010376"
+       style="fill:#00ff00;stroke-width:0.26458299"
+       x="6.530756" />
+    <rect
+       x="14.814979"
+       style="fill:#00ff00;stroke-width:0.26458299"
+       y="88.010376"
+       height="4"
+       width="4"
+       id="cv" />
   </g>
 </svg>
